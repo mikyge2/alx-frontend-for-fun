@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  color: white;
+  height: 100%;
+
+}
+
+.box1 {
+  font-size: 1rem;
+  background-color: green;
+}
+
+.box2 {
+  font-size: 2rem;
+  background-color: cyan;
+}
+
+.box3 {
+  font-size: 3rem;
+  background-color: darkslategray;
+}
+
+.box4 {
+  font-size: 2rem;
+  background-color: purple;
+}
+
+.box5 {
+  font-size: 1rem;
+  background-color: orange;
+}
