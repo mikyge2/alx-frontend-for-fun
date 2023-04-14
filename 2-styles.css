@@ -1,0 +1,69 @@
+.toggle-cb {
+  appearance: none;
+}
+
+.toggle-label {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.toggle-inner {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  background-color: grey;
+  border-radius: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+  transition: all 0.3s linear;
+}
+
+.toggle-inner::before {
+  content: "Yes";
+  left: 20px;
+  top: 3px;
+  position: absolute;
+  color: grey;
+  transition: all 0.3s linear;
+}
+
+.toggle-inner::after {
+  content: "No";
+  right: 23px;
+  top: 3px;
+  position: absolute;
+  color: darkgrey;
+  transition: all 0.3s linear;
+}
+
+.toggle-switch {
+  display: inline-block;
+  width: 40px;
+  background-color: white;
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  margin-top: -20px;
+  transition: all 0.3s linear;
+}
+
+.toggle-cb:checked + .toggle-label .toggle-inner {
+  background-color: red;
+}
+.toggle-cb:checked + .toggle-label .toggle-inner::before {
+  color: white;
+}
+.toggle-cb:checked + .toggle-label .toggle-inner::after {
+  color: red;
+}
+.toggle-cb:checked + .toggle-label .toggle-switch {
+  left: 65px;
+}

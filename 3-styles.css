@@ -1,0 +1,73 @@
+:root {
+  --primary: #D73953;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.7rem;
+  width: 100px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 5px;
+  transition: color, background-color 0.2s linear;
+}
+
+.menu-item:hover {
+  border: 1px solid var(--primary);
+  margin-bottom: 3px;
+  color: var(--primary);
+  background-color: white;
+}
+
+
+.menu-open-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.menu-open-button:hover {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+
+.menu-open:checked + .menu-open-button .menu-line-1 {
+  transform: rotate(-45deg);
+}
+.menu-open:checked + .menu-open-button .menu-line-2 {
+  display: none;
+}
+.menu-open:checked + .menu-open-button .menu-line-3 {
+  transform: rotate(45deg);
+}
+
+.menu-line {
+  height: 3%;
+  width: 30%;
+  margin: 2% auto;
+  background-color: white;
+  transform-origin: left;
+}
